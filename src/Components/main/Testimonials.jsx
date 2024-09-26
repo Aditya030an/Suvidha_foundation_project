@@ -22,23 +22,6 @@ const Testimonials = () => {
     };
   });
 
-  // useEffect(() => {
-  //   const handleHeight = () => {
-  //     if (scrollCompRef.current.scrollTop > 110) {
-  //       setShowArrow(true);
-  //     } else {
-  //       setShowArrow(false);
-  //     }
-  //   };
-  //   const scrollComp = scrollCompRef.current;
-  //   if (scrollComp) {
-  //     scrollCompRef.current.addEventListener("scroll", handleHeight);
-  //   }
-
-  //   return () => {
-  //     scrollComp.removeEventListener("scroll", handleHeight);
-  //   };
-  // });;
   const personArray = [
     {
       img: "https://suvidhafoundationedutech.org/img/Testimonials/1.jpg",
@@ -224,7 +207,7 @@ const Testimonials = () => {
   return (
     <div
       id="scrollComponent"
-      className="relative border-2 border-red-500  sm:mx-20 flex flex-col items-center gap-20 mb-20"
+      className="relative  sm:mx-20 flex flex-col items-center gap-20 mb-20"
     >
       <div
         data-aos="fade-up"
@@ -239,7 +222,7 @@ const Testimonials = () => {
       </div>
       <div
         data-aos="fade-up"
-        className="border-2 border-green-500 w-full flex flex-wrap items-center justify-center gap-20 p-7"
+        className=" w-full flex flex-wrap items-center justify-center gap-20 p-7"
       >
         {personArray.map((item, index) => {
           return (
