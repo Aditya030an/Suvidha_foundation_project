@@ -1,0 +1,120 @@
+import React, { useEffect, useState } from "react";
+import { FaArrowUp, FaLeftLong } from "react-icons/fa6";
+import img1 from "../../image/Shuvidha img1.jpg";
+import img2 from "../../image/Shuvidha img2.jpg";
+import img3 from "../../image/Shuvidha img3.jpg";
+import img4 from "../../image/Shuvidha img4.jpg";
+import img5 from "../../image/Shuvidha img5.jpg";
+import img6 from "../../image/Shuvidha img6.jpg";
+import img7 from "../../image/Shuvidha img7.jpg";
+import img8 from "../../image/Shuvidha img8.jpg";
+import img9 from "../../image/Shuvidha img9.jpg";
+import img10 from "../../image/Shuvidha img10.jpg";
+import img11 from "../../image/Shuvidha img11.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
+
+const gallaryArr = [
+  {
+    img: img1,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img2,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img3,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img4,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img5,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img6,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img7,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img8,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img9,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img10,
+    text: "FREE WORKSHOP",
+  },
+  {
+    img: img11,
+    text: "FREE WORKSHOP",
+  },
+];
+const Gallary = () => {
+  const [showArrow , setShowArrow] = useState(false);
+  const goToTop= ()=>{
+    window.scrollTo({top:0 , left:0 ,behavior:"smooth" });
+  }
+ 
+  useEffect(()=>{
+    const handleHeight = () => {
+      if(window.scrollY > 225){
+        setShowArrow(true);
+      }
+      else{
+        setShowArrow(false);
+      }
+    };
+    window.addEventListener("scroll", handleHeight);
+
+    return () => {
+      window.removeEventListener("scroll", handleHeight);
+    };
+  })
+  const navigation = useNavigate();
+  console.log("navigation inside gallary" , navigation);
+  return (
+    <div className=" sm:mx-20 flex flex-col items-center gap-20 mb-20" >
+      <div data-aos="fade-up" className=" w-[300px] sm:w-[450px] md:w-[600px] lg:w-[800px] flex flex-col items-center gap-2 sm:gap-4 mt-5 sm:mt-9">
+        <h4 className="text-xl sm:text-3xl md:text-5xl sm:font-semimedium  sm:leading-[50px] text-[#FFC107]">Our Gallary</h4>
+        <p className="text-center text-2xl sm:text-3xl md:text-5xl sm:font-semibold md:leading-[55px] text-gray-600 tracking-wide">Moments of Impact: Capturing the Journey of Our NGO</p>
+      </div>
+      {/* mapping */}
+      <div data-aos="fade-up" className=" w-full flex flex-wrap items-center justify-center gap-12">
+        {gallaryArr.map((item, index) => {
+          return (
+            <div className=" relative w-[280px] sm:w-[350px] md:w-[450px] lg:w-[400px] h-[260px] sm:h-[340px] md:h-[430px] lg:h-[380px] rounded-2xl bg-slate-200 ">
+            <div key={index} className="relative  w-full h-full overflow-hidden group rounded-2xl">
+              <div className="overflow-hidden ">
+              <img src={item.img} className="w-full h-4/5 object-cover  group-hover:scale-105 transfrom transition-all ease-in duration-500 delay-150"/>
+              </div>
+              <h1 className=" w-full h-1/5 text-center text-xl sm:text-2xl md:text-3xl font-semibold flex items-center justify-center bg-slate-200">{item.text}</h1>
+            </div>
+              <div className="absolute w-full h-full top-2 left-2 sm:left-2 bg-[#BABABA] -z-10 rounded-2xl"></div>
+              <div className="absolute w-full h-full top-4 left-4 sm:left-4 bg-[#D9D9D9] -z-20 rounded-2xl"></div>
+            </div>
+          );
+        })}
+      </div>
+      {
+        showArrow && 
+      <div className="z-50 fixed top-[770px] right-2 bg-[#FFC104] p-4 cursor-pointer" onClick={goToTop}>
+        <FaArrowUp className="text-2xl font-bold text-black"/>
+      </div>
+      }
+    </div>
+  );
+};
+
+export default Gallary;
