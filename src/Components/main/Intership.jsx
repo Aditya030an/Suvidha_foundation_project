@@ -10,7 +10,7 @@ const Intership = () => {
   const [counterOn , setCounterOn] = useState(false);
   return (
     <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit={()=>setCounterOn(false)}>
-    <div data-aos="flip-up" className=" w-full flex items-center justify-between ">
+    <div data-aos="flip-up" className=" w-full flex items-center justify-between mt-10 ">
       <img src={img14} className="w-0 sm:w-[100px] lg:w-[200px] xl:w-[250px] 2xl:w-[400px] h-auto object-cover" />
 
       <div className="  md:w-[604px] sm:h-[300px] md:h-[318px] 2xl:h-[370px] flex flex-col items-center justify-center sm:gap-3 md:gap-8 lg:gap-12 2xl:gap-16">

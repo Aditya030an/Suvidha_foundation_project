@@ -36,9 +36,9 @@ function App() {
   }, [showVideo]);
 
   return (
-    <section className="relative overflow-hidden xl:ml-20 ">
+    <section className="sm:z-50 relative overflow-hidden xl:ml-20 ">
       <Main />
-      <section className="fixed top-0 left-0 w-20 h-screen hidden xl:flex">
+      <section className="z-50 fixed top-0 left-0 w-20 h-screen hidden xl:flex">
         <SideBar />
       </section>
 

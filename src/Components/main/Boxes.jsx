@@ -60,12 +60,13 @@ const Boxes = () => {
     },
   ];
   return (
-    <div data-aos="zoom-in" className=" sm:w-[1347px]  xl:h-[890px] overflow-hidden  flex flex-col items-center sm:gap-10 justify-center mt-20">
+    //data-aos="zoom-in" 
+    <div className=" sm:w-[1347px] md:h-[650px]  overflow-hidden  flex flex-col items-center sm:gap-10 md:gap-5 justify-center mt-20">
       <div className=" sm:w-[782px] sm:h-[103px]  flex flex-col items-center justify-between">
-        <h5 className="text-[20px] sm:text-[24px] font-medium sm:font-semibold leading-[29.26px] text-[#FFC107]">
+        <h5 className="text-[20px] sm:text-[22px] font-medium sm:font-semibold leading-[29.26px] text-[#FFC107]">
           What We Do ?
         </h5>
-        <h1 className="text-[20px] sm:text-[38px] font-medium sm:font-semibold">
+        <h1 className="text-[20px] sm:text-[30px] font-medium sm:font-semibold">
           Causes for a Sustainable Future{" "}
         </h1>
       </div>
@@ -75,7 +76,7 @@ const Boxes = () => {
           return (
             <div
               key={index}
-              className="flex flex-col  items-center gap-3 md:gap-4 xl:gap-7 h-[325px] sm:h-[425px] md:h-[625px] w-[300px] sm:w-[32%] lg:w-[300px]  xl:w-[300px] 2xl:w-[360px]"
+              className="flex flex-col  items-center gap-3 md:gap-4 xl:gap-7 h-[325px] sm:h-[425px] md:h-[550px] w-[300px] sm:w-[32%] lg:w-[300px]  xl:w-[300px] 2xl:w-[360px]"
             >
               {/* box1 */}
               <div

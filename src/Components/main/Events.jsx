@@ -68,11 +68,11 @@ const Events = () => {
             return (
               <div
                 key={index}
-                className=" h-[200px] sm:h-[250px] md:h-[309px] w-[219px] sm:w-[300px] md:w-[342px] flex flex-col gap-2 "
+                className=" h-[200px] sm:h-[250px] w-[219px] sm:w-[300px] flex flex-col gap-2 "
               >
                 <img
                   src={item.image}
-                  className=" h-[160px] sm:h-[200px] md:h-[258px]  w-full object-cover rounded-[12px] sm:rounded-[20px]"
+                  className=" h-[160px] sm:h-[200px] md:h-[210px]  w-full object-cover rounded-[12px] sm:rounded-[20px]"
                 />
                 <p className=" sm:h-[35px] sm:w-full text-[18px] sm:text-[24px] font-[550] tracking-wide sm:font-semibold sm:leading-[29.26px]">
                   {item.text}
@@ -81,17 +81,18 @@ const Events = () => {
             );
           })}
         </div>
+        {/* animate-loop-scroll */}
         <div className=" flex gap-3 pl-6 animate-loop-scroll group-hover:paused ">
           {/* map */}
           {allEvent.map((item, index) => {
             return (
               <div
                 key={index}
-                className="h-[200px] sm:h-[250px] md:h-[309px] w-[219px] sm:w-[300px] md:w-[342px] flex flex-col gap-2 "
+                className="h-[200px] sm:h-[250px] w-[219px] sm:w-[300px] flex flex-col gap-2 "
               >
                 <img
                   src={item.image}
-                  className=" h-[160px] sm:h-[200px] md:h-[258px]  w-full object-cover rounded-[12px] sm:rounded-[20px]"
+                  className=" h-[160px] sm:h-[200px] md:h-[210px]  w-full object-cover rounded-[12px] sm:rounded-[20px]"
                 />
                 <p className=" sm:h-[35px] sm:w-full text-[18px] sm:text-[24px] font-[550] tracking-wide sm:font-semibold sm:leading-[29.26px]">
                   {item.text}

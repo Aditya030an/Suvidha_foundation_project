@@ -19,60 +19,70 @@ const gallaryArr = [
   {
     img: img1,
     text: "FREE WORKSHOP",
+    link:"https://drive.google.com/drive/u/1/folders/11DrNvVoYiIlmKUDW2AvsiklJTuIDL3Gk"
   },
   {
     img: img2,
-    text: "FREE WORKSHOP",
+    text: "BOOK DISTRIBUTION",
+    link:"https://drive.google.com/drive/u/1/folders/1FKG4shImI-9JRavKIP-0b-Tp9Hd205VI"
   },
   {
     img: img3,
-    text: "FREE WORKSHOP",
+    text: "ONLINE EVENTS",
+    link:"https://drive.google.com/drive/u/1/folders/1LF6c_FtHzv1ldXKXZ6oRueaD6OtIWsms"
   },
   {
     img: img4,
-    text: "FREE WORKSHOP",
+    text: "CLOTH DISTRIBUTION",
+    link:"https://drive.google.com/drive/u/1/folders/1nOFKvOjhWsbfVVPGumOfpLrFe2364_zK"
   },
   {
     img: img5,
-    text: "FREE WORKSHOP",
+    text: "TREE PLANTATION",
+    link:"https://drive.google.com/drive/u/1/folders/1V5Owzjc00GT_U2Mw_bdOMbiCYSxmScSw"
   },
   {
     img: img6,
-    text: "FREE WORKSHOP",
+    text: "FREE EDUCATION",
+    link:"https://drive.google.com/drive/u/1/folders/1ucG-Ltm_6fAwZ-1ta4-nHhRdKpu-3EAN"
   },
   {
     img: img7,
-    text: "FREE WORKSHOP",
+    text: "WOMEN'S DAY",
+    link:"https://drive.google.com/drive/u/1/folders/1_V-acFibBsweHcM-R-P__4EQWpauB6dK"
   },
   {
     img: img8,
-    text: "FREE WORKSHOP",
+    text: "FOOD DISTRIBUTION",
+    link:"https://drive.google.com/drive/u/1/folders/1AfCK5kJqf9_N_JGd8wqUhNesS8k1tVmw"
   },
   {
     img: img9,
-    text: "FREE WORKSHOP",
+    text: "SUVIDHA EVENTS",
+    link:"https://drive.google.com/drive/u/1/folders/1LF6c_FtHzv1ldXKXZ6oRueaD6OtIWsms"
   },
   {
     img: img10,
-    text: "FREE WORKSHOP",
+    text: "EMPOWERING WOMEN",
+    link:"https://drive.google.com/drive/u/1/folders/1tMkME479AhVFQ5pUZag3-YPgNWhIn7Rl"
   },
   {
     img: img11,
-    text: "FREE WORKSHOP",
+    text: "ANIMAL FEEDING",
+    link:"https://drive.google.com/drive/u/1/folders/1xr7jhBYaap-tZ2puU5HiF6ccitJtBfaB"
   },
 ];
 const Gallary = () => {
-  const [showArrow , setShowArrow] = useState(false);
-  const goToTop= ()=>{
-    window.scrollTo({top:0 , left:0 ,behavior:"smooth" });
-  }
- 
-  useEffect(()=>{
+  const [showArrow, setShowArrow] = useState(false);
+  const goToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
     const handleHeight = () => {
-      if(window.scrollY > 225){
+      if (window.scrollY > 225) {
         setShowArrow(true);
-      }
-      else{
+      } else {
         setShowArrow(false);
       }
     };
@@ -81,38 +91,61 @@ const Gallary = () => {
     return () => {
       window.removeEventListener("scroll", handleHeight);
     };
-  })
+  });
   const navigation = useNavigate();
-  console.log("navigation inside gallary" , navigation);
+  console.log("navigation inside gallary", navigation);
   return (
-    <div className=" sm:mx-20 flex flex-col items-center gap-20 mb-20" >
-      <div data-aos="fade-up" className=" w-[300px] sm:w-[450px] md:w-[600px] lg:w-[800px] flex flex-col items-center gap-2 sm:gap-4 mt-5 sm:mt-9">
-        <h4 className="text-xl sm:text-3xl md:text-5xl sm:font-semimedium  sm:leading-[50px] text-[#FFC107]">Our Gallary</h4>
-        <p className="text-center text-2xl sm:text-3xl md:text-5xl sm:font-semibold md:leading-[55px] text-gray-600 tracking-wide">Moments of Impact: Capturing the Journey of Our NGO</p>
+    <div className=" sm:mx-20 flex flex-col items-center gap-20 mb-20">
+      <div
+        data-aos="fade-up"
+        className=" w-[300px] sm:w-[450px] md:w-[600px] lg:w-[800px] flex flex-col items-center gap-2 sm:gap-4 mt-5 sm:mt-9"
+      >
+        <h4 className="text-xl sm:text-3xl md:text-5xl sm:font-semimedium  sm:leading-[50px] text-[#FFC107]">
+          Our Gallary
+        </h4>
+        <p className="text-center text-2xl sm:text-3xl md:text-5xl sm:font-semibold md:leading-[55px] text-gray-600 tracking-wide">
+          Moments of Impact: Capturing the Journey of Our NGO
+        </p>
       </div>
       {/* mapping */}
-      <div data-aos="fade-up" className=" w-full flex flex-wrap items-center justify-center gap-12">
+      <div
+        data-aos="fade-up"
+        className=" w-full flex flex-wrap items-center justify-center gap-12"
+      >
         {gallaryArr.map((item, index) => {
           return (
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+
             <div className=" relative w-[280px] sm:w-[350px] md:w-[450px] lg:w-[400px] h-[260px] sm:h-[340px] md:h-[430px] lg:h-[380px] rounded-2xl bg-slate-200 ">
-            <div key={index} className="relative  w-full h-full overflow-hidden group rounded-2xl">
-              <div className="overflow-hidden ">
-              <img src={item.img} className="w-full h-4/5 object-cover  group-hover:scale-105 transfrom transition-all ease-in duration-500 delay-150"/>
+              <div
+                key={index}
+                className="relative  w-full h-full overflow-hidden group rounded-2xl"
+              >
+                <div className="overflow-hidden ">
+                  <img
+                    src={item.img}
+                    className="w-full h-4/5 object-cover  group-hover:scale-105 transfrom transition-all ease-in duration-500 delay-150"
+                  />
+                </div>
+                <h1 className=" w-full h-1/5 text-center text-xl sm:text-2xl md:text-3xl font-semibold flex items-center justify-center bg-slate-200">
+                  {item.text}
+                </h1>
               </div>
-              <h1 className=" w-full h-1/5 text-center text-xl sm:text-2xl md:text-3xl font-semibold flex items-center justify-center bg-slate-200">{item.text}</h1>
-            </div>
               <div className="absolute w-full h-full top-2 left-2 sm:left-2 bg-[#BABABA] -z-10 rounded-2xl"></div>
               <div className="absolute w-full h-full top-4 left-4 sm:left-4 bg-[#D9D9D9] -z-20 rounded-2xl"></div>
             </div>
+            </a>
           );
         })}
       </div>
-      {
-        showArrow && 
-      <div className="z-50 fixed top-[770px] right-2 bg-[#FFC104] p-4 cursor-pointer" onClick={goToTop}>
-        <FaArrowUp className="text-2xl font-bold text-black"/>
-      </div>
-      }
+      {showArrow && (
+        <div
+          className="z-50 fixed top-[770px] right-2 bg-[#FFC104] p-4 cursor-pointer"
+          onClick={goToTop}
+        >
+          <FaArrowUp className="text-2xl font-bold text-black" />
+        </div>
+      )}
     </div>
   );
 };

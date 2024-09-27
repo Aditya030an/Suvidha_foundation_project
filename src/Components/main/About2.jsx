@@ -20,12 +20,12 @@ const About2 = () => {
   ];
   1;
   return (
-    <div data-aos = "fade-up" delay="700" className=" relative flex items-center justify-center gap-10 sm:w-[1440px] md:h-[685px] bg-[#FFC120] rounded-[20px]">
-      <div className=" z-10 absolute top-0 right-0 h-full flex items-end justify-center">
+    <div  data-aos = "fade-up" delay="700" className=" relative flex items-center justify-center gap-8 sm:w-[1440px] md:h-[640px] bg-[#FFC120] rounded-[20px]">
+      <div className="z-10 absolute top-0 right-0 h-full flex items-end justify-center">
         <img src={img} alt="image" className=" w-0 lg:w-[500px] xl:w-full" />
       </div>
 
-      <div className=" relative z-20 w-full h-full">
+      <div className=" relative z-20 w-full h-full flex flex-col items-center lg:block">
         <div className="mt-5 text-center">
           <h3 className="md:text-[24px] md:leading-[29.26px] font-semibold text-white">
             Learn About Us
@@ -34,11 +34,11 @@ const About2 = () => {
             Suvidha Mahila Mandal
           </h1>
         </div>
-        <div className=" md:w-[800px] lg:w-[500px] 2xl:w-[800px] flex flex-col items-center gap-2 mt-3 text-center">
-          <div className="md:text-[64px] lg:text-[30px] 2xl:text-[64px]  font-[800] md:leading-[78.02px] lg:leading-[30px] 2xl:leading-[78.02px] md:p-6 lg:p-3 2xl:p-6 text-[#20212B] ">
+        <div className=" md:w-[750px] lg:w-1/2 xl:w-[600px] 2xl:w-[800px] flex flex-col items-center gap-2 mt-3 text-center">
+          <div className="md:text-[60px] lg:text-[30px] 2xl:text-[64px]  font-[800] md:leading-[78.02px] lg:leading-[30px] 2xl:leading-[78.02px] md:p-4 lg:p-3 2xl:p-6 text-[#20212B] ">
             “Empowered women <br /> empower the world.”
           </div>
-          <div className="px-3 md:p-6 lg:p-2 xl:p-6 w-full md:text-[24px] font-[500] leading-[29.26px] tracking-wider">
+          <div className="px-3 md:p-0 lg:pl-5 xl:pl-2 w-full md:text-[24px] font-[500] leading-[29.26px] lg:leading-[30px] tracking-wide lg:tracking-normal xl:tracking-wide text-start ">
             {contendArr[index].text}
           </div>
         </div>

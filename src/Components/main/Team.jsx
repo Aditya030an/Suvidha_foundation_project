@@ -38,27 +38,31 @@ const Team = () => {
           The Hands Powering our Mission
         </p>
       </div>
-      <div className="flex flex-wrap items-center justify-evenly gap-4 lg:gap-24 xl:gap-1 lg:px-5 w-full sm:h-full 2xl:h-[410px] ">
-        {
-            teamArr.map((item , index)=>
-            {
-                return(
-
-        <div data-aos="flip-right" className="relative  w-[200px] sm:w-[250px] md:w-[350px] xl:w-[300px] rounded-tl-[55px] rounded-br-[55px] overflow-hidden ">
-          <img src={item.img} alt="" className="w-[200px] sm:w-[250px] md:w-[350px] xl:w-[300px] h-auto object-cover "/> 
-          <div className="z-10 absolute bottom-2 left-2 text-left sm:h-[58px] sm:w-[222px] ">
-            <h3 className="text-[20px] sm:text-[24px] font-semibold leading-[29.26px] text-white">
-              {item.name}
-            </h3>
-            <h3 className="text-[20px] sm:text-[24px] font-semibold leading-[29.26px] text-[#FFC107]">
-              {item.position}
-            </h3>
-          </div>
-          <div className="w-full h-full absolute top-0 left-0 bg-black bg-opacity-45"></div>
-        </div>
-                )
-            })
-        }
+      <div className=" flex flex-wrap items-center justify-center lg:justify-evenly gap-12 lg:gap-2 xl:gap-1 lg:px-5 w-full sm:h-full 2xl:h-[410px] ">
+        {teamArr.map((item, index) => {
+          return (
+            // data-aos="flip-right"
+            <div
+              
+              className="relative w-[200px] sm:w-[230px] md:w-[280px] lg:w-[300px] xl:w-[280px] rounded-tl-[55px] rounded-br-[55px] overflow-hidden "
+            >
+              <img
+                src={item.img}
+                alt=""
+                className="w-[200px] sm:w-[250px] md:w-[350px] xl:w-[300px] h-auto object-cover "
+              />
+              <div className="z-10 absolute bottom-2 left-2 text-left sm:h-[58px] sm:w-[222px] ">
+                <h3 className="text-[20px] sm:text-[24px] font-semibold leading-[29.26px] text-white">
+                  {item.name}
+                </h3>
+                <h3 className="text-[20px] sm:text-[24px] font-semibold leading-[29.26px] text-[#FFC107]">
+                  {item.position}
+                </h3>
+              </div>
+              <div className="w-full h-full absolute top-0 left-0 bg-black bg-opacity-45"></div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

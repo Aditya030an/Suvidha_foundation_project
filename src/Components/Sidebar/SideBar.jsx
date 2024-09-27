@@ -1,48 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaColonSign } from "react-icons/fa6";
-//  Red; Orange; Yellow; Green; Blue; Indigo; Violet;
-const designArr = [
-  {
-    image: {},
-    color: "red",
-    text: "Home",
-  },
-  {
-    image: {},
-    color: "orange",
-    text: "About",
-  },
-  {
-    image: {},
-    color: "yellow",
-    text: "What We Do?",
-  },
-  {
-    image: {},
-    color: "green",
-    text: "Intership",
-  },
-  {
-    image: {},
-    color: "blue",
-    text: "Event",
-  },
-  {
-    image: {},
-    color: "indigo",
-    text: "Reach",
-  },
-  {
-    image: {},
-    color: "violet",
-    text: "Team",
-  },
-  {
-    image: {},
-    color: "violet",
-    text: "Footer",
-  },
-];
 const SideBar = () => {
   const [height, setHeight] = useState(0);
   useEffect(() => {
@@ -67,18 +23,20 @@ const SideBar = () => {
   return (
     // {/* second design */}
 
-    <div className=" mt-[100px] h-full w-full">
+    <div className=" h-full w-full flex flex-col items-center justify-center">
       {/* HOME */}
       <div className="flex flex-col items-center justify-center ">
         <div
-          className="relative h-10 w-10  border-2 border-black rounded-full flex items-center justify-center group cursor-pointer"
+          className="relative h-8 w-8  border-2 border-black rounded-full flex items-center justify-center group cursor-pointer"
           onClick={() => {
             handleShowPage(0);
           }}
         >
-          <div className="h-5 w-5 bg-black rounded-full"></div>
+          <div className="h-4 w-4 bg-black rounded-full"></div>
           <div
-            className={`border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex ${height > 1 && "flex"}`}
+            className={`z-50 border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex ${
+              height > 1 && "flex"
+            }`}
           >
             Home Page
           </div>
@@ -95,12 +53,12 @@ const SideBar = () => {
       {/* ABOUT */}
       <div className="flex flex-col items-center justify-center ">
         <div
-          className="relative h-10 w-10  border-2 border-red-400 rounded-full flex items-center justify-center group cursor-pointer"
+          className="relative h-8 w-8  border-2 border-red-400 rounded-full flex items-center justify-center group cursor-pointer"
           onClick={() => {
-            handleShowPage(1047);
+            handleShowPage(976);
           }}
         >
-          <div className="h-5 w-5 bg-red-400 rounded-full"></div>
+          <div className="h-4 w-4 bg-red-400 rounded-full"></div>
           <div className="border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
             About
           </div>
@@ -117,12 +75,12 @@ const SideBar = () => {
       {/* WHAT DO WE  */}
       <div className="flex flex-col items-center justify-center ">
         <div
-          className="relative h-10 w-10  border-2 border-orange-400 rounded-full flex items-center justify-center group cursor-pointer "
+          className="relative h-8 w-8  border-2 border-orange-400 rounded-full flex items-center justify-center group cursor-pointer "
           onClick={() => {
-            handleShowPage(1906);
+            handleShowPage(1700);
           }}
         >
-          <div className="h-5 w-5 bg-orange-400 rounded-full"></div>
+          <div className="h-4 w-4 bg-orange-400 rounded-full"></div>
           <div className="border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
             What We Do?
           </div>
@@ -139,12 +97,12 @@ const SideBar = () => {
       {/* INTERSHIP */}
       <div className="flex flex-col items-center justify-center ">
         <div
-          className="relative h-10 w-10  border-2 border-yellow-400 rounded-full flex items-center justify-center group cursor-pointer "
+          className="relative h-8 w-8 border-2 border-yellow-400 rounded-full flex items-center justify-center group cursor-pointer "
           onClick={() => {
-            handleShowPage(2744);
+            handleShowPage(2388);
           }}
         >
-          <div className="h-5 w-5 bg-yellow-400 rounded-full"></div>
+          <div className="h-4 w-4 bg-yellow-400 rounded-full"></div>
           <div className="border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
             Internship
           </div>
@@ -161,12 +119,12 @@ const SideBar = () => {
       {/* EVENT */}
       <div className="flex flex-col items-center justify-center ">
         <div
-          className="relative h-10 w-10  border-2 border-green-400 rounded-full flex items-center justify-center group cursor-pointer "
+          className="relative h-8 w-8  border-2 border-green-400 rounded-full flex items-center justify-center group cursor-pointer "
           onClick={() => {
-            handleShowPage(3500);
+            handleShowPage(2930);
           }}
         >
-          <div className="h-5 w-5 bg-green-400 rounded-full"></div>
+          <div className="h-4 w-4 bg-green-400 rounded-full"></div>
           <div className="border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
             Event
           </div>
@@ -183,12 +141,12 @@ const SideBar = () => {
       {/* REACH */}
       <div className="flex flex-col items-center justify-center ">
         <div
-          className="relative h-10 w-10  border-2 border-blue-400 rounded-full flex items-center justify-center group cursor-pointer "
+          className="relative h-8 w-8  border-2 border-blue-400 rounded-full flex items-center justify-center group cursor-pointer "
           onClick={() => {
-            handleShowPage(4059);
+            handleShowPage(3366);
           }}
         >
-          <div className="h-5 w-5 bg-blue-400 rounded-full"></div>
+          <div className="h-4 w-4 bg-blue-400 rounded-full"></div>
           <div className="border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
             Reach
           </div>
@@ -205,13 +163,13 @@ const SideBar = () => {
       {/* TEAM */}
       <div className="flex flex-col items-center justify-center ">
         <div
-          className="relative h-10 w-10  border-2 border-indigo-400 rounded-full flex items-center justify-center group cursor-pointer "
+          className="z-50 relative h-8 w-8  border-2 border-indigo-400 rounded-full flex items-center justify-center group cursor-pointer "
           onClick={() => {
-            handleShowPage(4687);
+            handleShowPage(4004);
           }}
         >
-          <div className="h-5 w-5 bg-indigo-400 rounded-full"></div>
-          <div className="border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
+          <div className="h-4 w-4 bg-indigo-400 rounded-full"></div>
+          <div className="z-50 border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
             Team
           </div>
         </div>
@@ -219,20 +177,20 @@ const SideBar = () => {
           {height > 3893 && (
             <div
               className={`w-1 bg-violet-400`}
-              style={{ height: `${height > 3893 && (height - 3893) / 20}px` }}
+              style={{ height: `${height > 4087 && (height - 4087) / 5}px` }}
             ></div>
           )}
         </div>
       </div>
       <div className="flex flex-col items-center justify-center ">
         <div
-          className="relative h-10 w-10  border-2 border-violet-400 rounded-full flex items-center justify-center group cursor-pointer "
+          className="relative h-8 w-8  border-2 border-violet-400 rounded-full flex items-center justify-center group cursor-pointer "
           onClick={() => {
-            handleShowPage(5000);
+            handleShowPage(4350);
           }}
         >
-          <div className="h-5 w-5 bg-violet-400 rounded-full"></div>
-          <div className="border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
+          <div className="h-4 w-4 bg-violet-400 rounded-full"></div>
+          <div className="z-50 border-2 absolute top-0 left-12 px-2 py-2 items-center justify-center text-xl font-medium tracking-wide bg-gray-950 text-white rounded-xl w-48 hidden group-hover:flex">
             Footer
           </div>
         </div>

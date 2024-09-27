@@ -207,7 +207,7 @@ const Testimonials = () => {
   return (
     <div
       id="scrollComponent"
-      className="relative  sm:mx-20 flex flex-col items-center gap-20 mb-20"
+      className="relative   sm:mx-20 flex flex-col items-center gap-20 mb-20"
     >
       <div
         data-aos="fade-up"
@@ -222,11 +222,11 @@ const Testimonials = () => {
       </div>
       <div
         data-aos="fade-up"
-        className=" w-full flex flex-wrap items-center justify-center gap-20 p-7"
+        className=" w-full flex flex-wrap items-center justify-center gap-16 "
       >
         {personArray.map((item, index) => {
           return (
-            <div className=" relative w-[280px] sm:w-[350px] md:w-[450px] lg:w-[400px] h-[260px] sm:h-[340px] md:h-[430px] lg:h-[380px] rounded-2xl bg-slate-200 ">
+            <div className=" relative w-[280px] sm:w-[350px] md:w-[450px] lg:w-[350px] h-[260px] sm:h-[340px] md:h-[430px] lg:h-[380px] rounded-2xl bg-slate-200 ">
               <div
                 key={index}
                 className=" relative  w-full h-full overflow-hidden group rounded-2xl"
@@ -241,7 +241,7 @@ const Testimonials = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="mt-3 w-full h-1/5 text-center text-[14px] md:text-xl font-semibold flex items-center justify-center bg-slate-200 tracking-wide leading-6 md:leading-8">
+                  <p className="mt-3 w-full h-1/5 text-center text-[14px] md:text-xl font-semibold flex items-center justify-center bg-slate-200 tracking-wide leading-6 md:leading-8 p-1">
                     {item.text}
                   </p>
                 </div>
@@ -255,7 +255,7 @@ const Testimonials = () => {
 
       {showArrow && (
         <button
-          className="fixed top-[700px] right-4 bg-[#FFC104] p-4 cursor-pointer"
+          className="fixed top-[700px] right-16 bg-[#FFC104] p-4 cursor-pointer"
           onClick={goToTop}
         >
           <FaArrowUp className="text-2xl font-bold text-black" />
