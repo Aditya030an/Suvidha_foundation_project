@@ -175,7 +175,7 @@ const OurDoner = () => {
       </div>
       {
         showArrow && 
-      <div className="z-50 fixed top-[770px] right-2 bg-[#FFC104] p-4 cursor-pointer" onClick={goToTop}>
+      <div className="z-50 fixed top-[550px] right-4 bg-[#FFC104] p-4 cursor-pointer" onClick={goToTop}>
         <FaArrowUp className="text-2xl font-bold text-black"/>
       </div>
       }
