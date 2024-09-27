@@ -255,7 +255,7 @@ const Testimonials = () => {
 
       {showArrow && (
         <button
-          className="fixed top-[550px] right-4 bg-[#FFC104] p-4 cursor-pointer"
+          className="z-50 fixed top-[550px] right-4 bg-[#FFC104] p-4 cursor-pointer"
           onClick={goToTop}
         >
           <FaArrowUp className="text-2xl font-bold text-black" />

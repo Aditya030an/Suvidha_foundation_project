@@ -61,7 +61,6 @@ const Events = () => {
         </p>
       </div>
       <div className=" w-full flex  overflow-hidden group  sm:py-3">
-        {/* animate-loop-scroll */}
         <div className=" flex gap-3 pl-6 animate-loop-scroll group-hover:paused ">
           {/* map */}
           {allEvent.map((item, index) => {

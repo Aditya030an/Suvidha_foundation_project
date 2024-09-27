@@ -46,7 +46,7 @@ const Footer = () => {
               href="https://suvidhafoundationedutech.org/Themes/doc/80G_APROVAL.pdf"
               target="_blank"
             >
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:scale-105 hover:text-[#FFC107]">
                 {" "}
                 <IoIosArrowForward /> 80G Certificate
               </li>
@@ -55,7 +55,7 @@ const Footer = () => {
               href="https://suvidhafoundationedutech.org/Themes/doc/12A_APPROVAL.pdf"
               target="_blank"
             >
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:scale-105 hover:text-[#FFC107]">
                 {" "}
                 <IoIosArrowForward /> 12A Certificate
               </li>
@@ -64,7 +64,7 @@ const Footer = () => {
               href="https://suvidhafoundationedutech.org/Themes/doc/CSR.PDF"
               target="_blank"
             >
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:scale-105 hover:text-[#FFC107]">
                 {" "}
                 <IoIosArrowForward /> CSR Certificate
               </li>
@@ -73,7 +73,7 @@ const Footer = () => {
               href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_darpan_portal_registration.pdf"
               target="_blank"
             >
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:scale-105 hover:text-[#FFC107]">
                 {" "}
                 <IoIosArrowForward /> Suvidha Darpan Registration
               </li>
@@ -82,13 +82,13 @@ const Footer = () => {
               href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_pan_card.pdf"
               target="_blank"
             >
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:scale-105 hover:text-[#FFC107]">
                 {" "}
                 <IoIosArrowForward /> Suvidha Pan Card
               </li>
             </a>
             <a href="https://suvidhafoundationedutech.org/verify.php" target="_blank">
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:scale-105 hover:text-[#FFC107]">
                 {" "}
                 <IoIosArrowForward /> Verify Your Certificate
               </li>

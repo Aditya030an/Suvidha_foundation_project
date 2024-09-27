@@ -7,7 +7,6 @@ import image4 from "../../image/image 4.png"
 import image5 from "../../image/image 5.png"
 import simle from "../../image/smile.png"
 import rectHeart from "../../image/Rectangle 2.png"
-import About from "./About";
 import Boxes from "./Boxes";
 import Intership from "./Intership";
 import Footer from "../Footer/Footer";

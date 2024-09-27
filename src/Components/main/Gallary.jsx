@@ -136,7 +136,7 @@ const Gallary = () => {
       </div>
       {showArrow && (
         <div
-          className="z-50 border-2 border-red-600 fixed top-[580px] right-5 bg-[#FFC104] p-4 cursor-pointer"
+          className="z-50 fixed top-[580px] right-5 bg-[#FFC104] p-4 cursor-pointer"
           onClick={goToTop}
         >
           <FaArrowUp className="text-2xl font-bold text-black" />
